@@ -15,19 +15,19 @@
 </head>
 
 <body>
-  <nav class="white" role="navigation">
+  <nav class="cyan darken-4" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">allAboard</a>
+      <a id="logo-container" href="#" class="brand-logo white-text">allAboard</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Train</a></li>
-        <li><a href="#">Plane</a></li>
-        <li><a href="#">Cruise</a></li>
+        <li><a class="white-text text-darken-2" href="#">Train</a></li>
+        <li><a class="white-text text-darken-2" href="#">Plane</a></li>
+        <li><a class="white-text text-darken-2" href="#">Cruise</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Train</a></li>
-        <li><a href="#">Plane</a></li>
-        <li><a href="#">Cruise</a></li>
+        <li><a class="blue-grey-text text-darken-2" href="#">Train</a></li>
+        <li><a class="blue-grey-text text-darken-2" href="#">Plane</a></li>
+        <li><a class="blue-grey-text text-darken-2" href="#">Cruise</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -36,12 +36,9 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Train Schedule</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        
+        <br>
+
+
         <br><br>
 
       </div>
@@ -49,155 +46,141 @@
     <div class="parallax"><img src="assets/images/Train1.jpg" alt="Railroad"></div>
   </div>
 
-
+  
   <div class="container">
+    
     <div class="section">
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m12">
-          <div>
-            <table class="table table-sm table-hover" id="train-table">
+        
+        <!-- <div class="container"> -->
+        <div class="col s8">
+          <div class="row left">
+
+        <div class="card white lighten-4">
+          <div class="card-content card-content-orange">
+            <h2 class="cyan-text text-darken-4">Train Schedule</h2>
+            <h5 class="blue-grey-text text-darken-2">Find the next train to take you to your destination. </h5>
+            <table class="table table-sm table-hover blue-grey-text text-darken-2" id="train-table">
               <thead>
                 <tr>
                   <th scope="col">
-                    <h5 class="center">Train Name</h5>
+                    <h6 class="">Train Name</h6>
                   </th>
                   <th scope="col">
-                    <h5 class="center">Destination</h5>
+                    <h6 class="">Destination</h6>
                   </th>
                   <th scope="col">
-                    <h5 class="center">Frequency (min)</h5>
+                    <h6 class="">Frequency (min)</h6>
                   </th>
                   <th scope="col">
-                    <h5 class="center">Next Arrival</h5>
+                    <h6 class="">Next Arrival</h6>
                   </th>
                   <th scope="col">
-                    <h5 class="center">Minutes Away</h5>
+                    <h6 class="">Minutes Away</h6>
                   </th>
                 </tr>
               </thead>
               <tbody>
               </tbody>
             </table>
+            </div>
+            </div>
           </div>
+        </div>
+        <!-- </div> -->
+        <div class="col s4">
+        <div class="card grey lighten-1">
+          <div class="card-content card-content-grey white-text">
+            <h5 class="center-align white-text text-lighten-1">Can't seem to find the right destination?</h5>
+            <h4 class="center-align cyan-text text-darken-4">Schedule a Train</h4>
+            <!-- SEARCH LOCATION START -->
+
+
+            <table class="table table-sm table-hover blue-grey-text text-darken-2" id="train-table">
+              <thead>
+              </thead>
+            </table>
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input type="text" id="name" class="autocomplete-input autocomplete">
+                    <label for="autocomplete-input">Train Name</label>
+                  </div>
+                  <!-- </div> -->
+                  <!-- <div class="row"> -->
+                  <div class="input-field col s12">
+                    <input type="text" id="dest" class="autocomplete-input autocomplete">
+                    <label for="autocomplete-input">Destination</label>
+                  </div>
+                  <!-- </div> -->
+                  <!-- <div class="row"> -->
+                  <div class="input-field col s12">
+                    <input type="text" id="trainTime" class="autocomplete-input autocomplete">
+                    <label for="autocomplete-input">First Train Time (HH:mm-military time)</label>
+                  </div>
+                  <!-- </div> -->
+                  <!-- <div class="row"> -->
+                  <div class="input-field col s12">
+                    <input type="text" id="freq" class="autocomplete-input autocomplete">
+                    <label for="autocomplete-input">Frequency (min)</label>
+                    <div class="row center">
+                      <a href="" id="download-button" class="btn-large waves-effect waves-light cyan darken-4">Schedule
+                        Now</a>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
         </div>
       </div>
 
-    </div>
-  </div>
+
 
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+         
         </div>
       </div>
     </div>
     <div class="parallax"><img src="assets/images/Train1.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 m12">
-          <div>
-            <table class="table table-sm table-hover" id="train-table">
-              <thead>
-                <tr>
-                  <th scope="col">
-                    <h5 class="left">Add Train</h5>
-                  </th>
-                </tr>
-              </thead>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="text" id="name" class="autocomplete-input autocomplete">
-              <label for="autocomplete-input">Train Name</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="text" id="dest" class="autocomplete-input autocomplete">
-              <label for="autocomplete-input">Destination</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="text" id="trainTime" class="autocomplete-input autocomplete">
-              <label for="autocomplete-input">First Train Time (HH:mm-military time)</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="text" id="freq" class="autocomplete-input autocomplete">
-              <label for="autocomplete-input">Frequency (min)</label>
-              <div class="row left">
-                <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get
-                  Started</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="assets/images/Train1.jpg" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <footer class="page-footer teal">
+  <footer class="page-footer grey">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
-            full time job. Any amount would help support and continue development on this project and is greatly
-            appreciated.</p>
+          <h5 class="cyan-text text-darken-4">AllAboard</h5>
+          <p class="blue-grey-text text-darken-2">We are a team working to provide transportation whenever and wherever when needed. Travel in style by train, plane, or cruise ship: you choose.</p>
 
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+          
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+          <h5 class="white-text">Scheduling</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+            <li><a class="white-text" href="#!">Train</a></li>
+            <li><a class="white-text" href="#!">Plane</a></li>
+            <li><a class="white-text" href="#!">Cruise</a></li>
+        </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        Made by <b><a class="cyan-text text-darken-4" href="">Sarah Sefcik</a></b>
       </div>
     </div>
   </footer>
@@ -205,11 +188,11 @@
 
   <!--  Scripts-->
   <!-- Compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
- 
+
 
   <script src="assets/js/materialize.js"></script>
   <script src="assets/js/init.js"></script>
