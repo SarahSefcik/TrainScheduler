@@ -19,15 +19,14 @@ $("#download-button").on("click", function (event) {
   // grabs user input
   // Cant figure out why the input is not going into Firebase
   var trainName = document.getElementById("name").value;
-  var trainName = document.getElementById("dest").value;
-  var trainName = document.getElementById("trainTime").value;
-  var trainName = document.getElementById("freq").value;
-  
-  
   console.log(trainName);
+  var dest = document.getElementById("dest").value;
   console.log(dest);
+  var trainTime = document.getElementById("trainTime").value;
   console.log(trainTime);
+  var freq = document.getElementById("freq").value;
   console.log(freq);
+  
   // Creates local temporary object for holding train data
   var newTrain = {
     name: trainName,
